@@ -3,6 +3,7 @@ body {
     color: #fff;
     text-align: center;
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 a {
@@ -23,6 +24,8 @@ ul {
     margin-bottom: auto 0;
     position: relative;
     z-index: 1;
+    background-image: url('https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/gettyimages-1390815938?_a=BAVMn6DY0');
+    background-size: cover;
 }
 
 img {
@@ -48,3 +51,12 @@ h1{
     border-radius: 10px;
     display: inline-block;
 }
+
+#hdr > div > p {
+    display: inline-block;
+    background-color: #1d3d64aa;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #ffffff;
+}
+
