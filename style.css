@@ -26,6 +26,7 @@ ul {
     z-index: 1;
     background-image: url('https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/gettyimages-1390815938?_a=BAVMn6DY0');
     background-size: cover;
+    background-position: top;
 }
 
 img {
