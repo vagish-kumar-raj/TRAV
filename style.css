@@ -53,6 +53,14 @@ h1{
     display: inline-block;
 }
 
+.title{
+    text-shadow:
+    2px 2px 0px #1d3d64,
+    -2px 2px 0px #1d3d64,
+    2px -2px 0px #1d3d64,
+    -2px -2px 0px #1d3d64;
+}
+
 #hdr > div > p {
     display: inline-block;
     background-color: #1d3d64aa;
