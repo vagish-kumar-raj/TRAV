@@ -13,51 +13,94 @@
     </header>
     <hr />
     <main>
-      <section>
-        <h2>Destinations</h2>
-        <ul>
-          <li>
-            <label><input type="checkbox" value="1" /><a href="#Mumbai">Mumbai</a></label>
-          </li>
-          <li>
-            <label><input type="checkbox" value="1" /><a href="#Bengluru">Bengluru</a></label>
-          </li>
-          <li>
-            <label><input type="checkbox" value="1" /><a href="#Jaipur">Jaipur</a></label>
-          </li>
-          <li>
-            <label><input type="checkbox" value="1" /><a href="#Gangtok">Gangtok</a></label>
-          </li>
-          <li>
-            <label><input type="checkbox" value="1" /><a href="#Goa">Goa</a></label>
-          </li>
-          <li>
-            <label><input type="checkbox" value="1" /><a href="#Lakshadweep">Lakshadweep</a></label>
-          </li>
-          <li>
-            <label><input type="checkbox" value="1" /><a href="#New-Delhi">New Delhi</a></label>
-          </li>
-          <li>
-            <label><input type="checkbox" value="1" /><a href="#Darjeeling">Darjeeling</a></label>
-          </li>
-          <li>
-            <label><input type="checkbox" value="1" /><a href="#Srinagar">Srinagar</a></label>
-          </li>
-        </ul>
+      <section id="cart">
+        <h2>Cart</h2>
+        <article id="select">
+          <h3>Destinations</h3>
+          <ul id="cities">
+            <li>
+              <input type="checkbox" value="Mumbai" id="city-mumbai" />
+              <label for="city-mumbai"><a href="#Mumbai">Mumbai</a></label>
+            </li>
+            <li>
+              <input type="checkbox" value="Bangalore" id="city-bangalore" />
+              <label for="city-bangalore"><a href="#Bangalore">Bangalore</a></label>
+            </li>
+            <li>
+              <input type="checkbox" value="Jaipur" id="city-jaipur" />
+              <label for="city-jaipur"><a href="#Jaipur">Jaipur</a></label>
+            </li>
+            <li>
+              <input type="checkbox" value="Gangtok" id="city-gangtok" />
+              <label for="city-gangtok"><a href="#Gangtok">Gangtok</a></label>
+            </li>
+            <li>
+              <input type="checkbox" value="Tawang" id="city-tawang" />
+              <label for="city-tawang"><a href="#Tawang">Tawang</a></label>
+            </li>
+            <li>
+              <input type="checkbox" value="Lakshadweep" id="city-lakshadweep" />
+              <label for="city-lakshadweep"><a href="#Lakshadweep">Lakshadweep</a></label>
+            </li>
+            <li>
+              <input type="checkbox" value="New Delhi" id="city-new-delhi" />
+              <label for="city-new-delhi"><a href="#New-Delhi">New Delhi</a></label>
+            </li>
+            <li>
+              <input type="checkbox" value="Darjeeling" id="city-darjeeling" />
+              <label for="city-darjeeling"><a href="#Darjeeling">Darjeeling</a></label>
+            </li>
+            <li>
+              <input type="checkbox" value="Srinagar" id="city-srinagar" />
+              <label for="city-srinagar"><a href="#Srinagar">Srinagar</a></label>
+            </li>
+            <li>
+              <input type="checkbox" value="Agra" id="city-agra" />
+              <label for="city-agra"><a href="#Agra">Agra</a></label>
+            </li>
+          </ul>
+        </article>
+        <article id="buy">
+          <h3>Places you wanna go:</h3>
+          <button id="refresh"><img src="/img/refresh.svg" alt="refresh" /></button>
+          <ul id="buyList"></ul>
+          <h4>Total: <span id="total"></span></h4>
+          <label for="CC">Coupon Code</label>
+          <input type="text" id="CC">
+        </article>
       </section>
       <hr />
       <section>
         <article class="dest" id="Mumbai">
-          <h2></h2>
+          <h2>Mumbai</h2>
         </article>
-        <article class="dest" id="Bengluru"></article>
-        <article class="dest" id="Jaipur"></article>
-        <article class="dest" id="Gangtok"></article>
-        <article class="dest" id="Goa"></article>
-        <article class="dest" id="Lakshadweep"></article>
-        <article class="dest" id="New-Delhi"></article>
-        <article class="dest" id="Darjeeling"></article>
-        <article class="dest" id="Srinagar"></article>
+        <article class="dest" id="Bangalore">
+          <h2>Bangalore</h2>
+        </article>
+        <article class="dest" id="Jaipur">
+          <h2>Jaipur</h2>
+        </article>
+        <article class="dest" id="Gangtok">
+          <h2>Gangtok</h2>
+        </article>
+        <article class="dest" id="Tawang">
+          <h2>Tawang</h2>
+        </article>
+        <article class="dest" id="Lakshadweep">
+          <h2>Lakshadweep</h2>
+        </article>
+        <article class="dest" id="New-Delhi">
+          <h2>New Delhi</h2>
+        </article>
+        <article class="dest" id="Darjeeling">
+          <h2>Darjeeling</h2>
+        </article>
+        <article class="dest" id="Srinagar">
+          <h2>Srinagar</h2>
+        </article>
+        <article class="dest" id="Agra">
+          <h2>Agra</h2>
+        </article>
       </section>
     </main>
     <footer></footer>

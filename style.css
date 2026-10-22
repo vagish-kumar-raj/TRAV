@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Sharp&display=swap');
+
+.asapSharp {
+  font-family: 'AsapSharp', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+html {
+  font-family: 'AsapSharp', Arial, Helvetica, sans-serif, monospace;
+  background-color: black;
+}
+
+body {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+
+#cart {
+  display: flex;
+}
+
+#select {
+  flex: 1 1 auto;
+  border-right: 1px gray solid;
+}
+#buy {
+  flex: 1 1 auto;
+}
+
+#buy > h3{
+  display: inline;
+}
+
+
+#buy, #select {
+  margin: 10px;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+button {
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
