@@ -35,7 +35,7 @@ body {
   display: inline;
 }
 
-#cart article {
+article {
   margin: 10px;
   padding: 10px;
   border: 2px #555555 solid;
