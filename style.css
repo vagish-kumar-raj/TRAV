@@ -14,12 +14,15 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #ddd;
   margin: 10px;
   padding: 20px;
   border-radius: 20px;
+  color: #333333;
 }
-
+header {
+  text-align: center;
+}
 #cart {
   display: flex;
 }
@@ -27,8 +30,22 @@ body {
 #select {
   flex: 1 1 auto;
 }
+
+#cities {
+  list-style-type: none;
+  padding: 0px;
+}
+
+#IND50 {
+  color: transparent;
+}
+
 #buy {
   flex: 1 1 auto;
+}
+
+h2 {
+  margin: 20px 25px 10px;
 }
 
 #buy > h3 {
@@ -38,8 +55,22 @@ body {
 article {
   margin: 10px;
   padding: 10px;
-  border: 2px #555555 solid;
+  border-radius: 20px;
+    box-shadow: 5px 8px 2px #888;
+    border-bottom-right-radius: 0px;
+  background-color: #fff;
+  border-bottom-right-radius: 0px;
+}
+
+footer {
+  margin-left: 20px;
+}
+
+.dest img {
   border-radius: 10px;
+  margin: 10px;
+  width: 50%;
+  max-width: 765px;
 }
 
 a {
@@ -47,6 +78,7 @@ a {
 }
 
 hr {
+  width: 100%;
   border: #555555 1px solid;
 }
 
@@ -58,8 +90,26 @@ button {
 }
 
 @media (max-width: 765px) {
+  body {
+    margin: 0px;
+    padding: 5px;
+    border-radius: 0%;
+  }
   #cart {
     display: flex;
     flex-direction: column;
+  }
+  .dest img {
+    width: calc(100% - 2px);
+    max-width: 100%;
+    margin: 0px;
+    border-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .dest {
+    padding: 5px;
+
   }
 }
