@@ -1,23 +1,28 @@
 const buyList = document.querySelector('#buyList');
-const selected = document.querySelectorAll('input[type="checkbox"]');
+const selected = document.querySelectorAll('#cities input[type="checkbox"]');
 const total = document.querySelector('#total');
 const ref = document.querySelector('#refresh');
 const coupon = document.querySelector('#CC');
 function refresh() {
   buyList.innerHTML = '';
+  let count = 0;
 
   for (const checkbox of selected) {
     if (checkbox.checked) {
       const li = document.createElement('li');
       li.textContent = checkbox.value;
       buyList.appendChild(li);
-      let a = buyList.querySelectorAll('li').length;
-      total.textContent = a * 1000 + '$';
-      if (coupon.value === 'IND50') {
-        total.textContent = a * 500 + '$';
-      }
+      count += 1;
     }
   }
+
+  const price = coupon.value.trim().toUpperCase() === 'IND50' ? 500 : 1000;
+  total.textContent = `${count * price}$`;
 }
 
 ref.addEventListener('click', refresh);
+for (const checkbox of selected) {
+  checkbox.addEventListener('change', refresh);
+}
+coupon.addEventListener('input', refresh);
+refresh();
